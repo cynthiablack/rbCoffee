@@ -1,0 +1,72 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Abril Fat Face', 'Lucida Bold', 'Display';
+  font-size: 4rem;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 2%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-image: url("images\teaspoons.jpg");
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.logo {
+  width: 80px;
+}
+
+.nav-icon {
+  width: 20px;
+}
+
+.nav-menu {
+  float: right;
+  position: relative;
+  top: -80px;
+}
