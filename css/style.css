@@ -30,9 +30,30 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
-h1 {
+button {
+  background-color: rgb(224, 136, 20);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button, input {
+  min-height: 5vh;
+  min-width: 8vw;
+}
+
+h1, h2 {
   font-family: 'Abril Fat Face', 'Lucida Bold', 'Display';
   font-size: 4rem;
+  max-width: 50%;
+}
+
+h3 {
+  color: rgb(224, 136, 20);
+}
+
+input {
+  border-radius: 10px 0 0 10px;
 }
 
 li {
@@ -45,9 +66,7 @@ li {
 /* LAYOUT
 /*******************************************/
 header {
-  background-image: url("images\teaspoons.jpg");
-  background-repeat: no-repeat;
-  margin: 0;
+  
 }
 
 footer {
@@ -57,6 +76,19 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.about {
+  background-image: url('../images/coffee-cup.jpg');
+  background-position: 100% -20vh;
+  background-size: cover;
+}
+
+.background-image {
+  background-image: url('../images/header.jpg');
+  background-position: 100% -20vh;
+  background-size: cover;
+}
+
 .logo {
   width: 80px;
 }
@@ -69,4 +101,12 @@ footer {
   float: right;
   position: relative;
   top: -80px;
+}
+
+.social-media {
+  color: rgb(224, 136, 20);
+}
+
+.top {
+  margin-left: 1rem;
 }
