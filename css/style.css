@@ -42,10 +42,13 @@ button, input {
   min-width: 8vw;
 }
 
+h1 {
+  max-width: 50%;
+}
+
 h1, h2 {
   font-family: 'Abril Fat Face', 'Lucida Bold', 'Display';
   font-size: 4rem;
-  max-width: 50%;
 }
 
 h3 {
@@ -57,16 +60,24 @@ input {
 }
 
 li {
-  list-style-type: none;
-  display: inline;
+  display: inline;*/
   padding-left: 2%;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-  
+nav {
+  float: right;
+  margin-right: 2vw;
+  position: relative;
+  top: 2.5vh;
+  right: -3.5vw;
+  transform: rotate(180deg)
+}
+
+section {
+  padding: 1vh 1vw;
 }
 
 footer {
@@ -77,15 +88,20 @@ footer {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-.about {
+#about {
   background-image: url('../images/coffee-cup.jpg');
-  background-position: 100% -20vh;
+  background-position: 100% -55vh;
   background-size: cover;
+}
+
+#about h3 {
+  position: relative;
+  left: -41vw;
 }
 
 .background-image {
   background-image: url('../images/header.jpg');
-  background-position: 100% -20vh;
+  background-position: 100% auto;
   background-size: cover;
 }
 
@@ -93,20 +109,39 @@ footer {
   width: 80px;
 }
 
+#menu {
+  position: relative;
+  left: -43%;
+}
+
 .nav-icon {
   width: 20px;
 }
 
 .nav-menu {
+  background-color: rgba(218, 218, 218, 0.4);
   float: right;
-  position: relative;
-  top: -80px;
+  min-height: 5vh;
+  padding: 1vh 1.5vw;
+  transform: rotate(180deg)
+}
+
+.nav-menu:hover {
+  background-color: rgba(105, 105, 105, 0.6);
+  font-weight: bold;
+}
+
+.overlay {
+  background-color: rgba(218, 218, 218, 0.85);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: 50%;
+  padding: 1%;
 }
 
 .social-media {
   color: rgb(224, 136, 20);
-}
-
-.top {
-  margin-left: 1rem;
+  padding: 0 2vw 2vh 0;
 }
