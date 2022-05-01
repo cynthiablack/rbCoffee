@@ -55,12 +55,17 @@ h3 {
   color: rgb(224, 136, 20);
 }
 
+h4 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
 input {
   border-radius: 10px 0 0 10px;
 }
 
 li {
-  display: inline;*/
+  display: inline;
   padding-left: 2%;
 }
 
@@ -105,13 +110,17 @@ footer {
   background-size: cover;
 }
 
-.logo {
-  width: 80px;
+.coffee-profile {
+  display: inline-block;
 }
 
-#menu {
-  position: relative;
-  left: -43%;
+.menu {
+  float: left;
+  width: 30%;
+}
+
+.logo {
+  width: 80px;
 }
 
 .nav-icon {
