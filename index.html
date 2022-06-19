@@ -18,7 +18,7 @@
 	<body>
 	<div class="background-image"
 		<header>
-			<img class="logo" src="images\RBClogo.png">
+			<a href="/index.htm"><img class="logo" alt="home" src="images\RBClogo.png"></a>
 			<nav>
 				<ul>
 					<li class="nav-menu horizontal-list"><a href="/index.html">Home</a></li>
@@ -31,7 +31,7 @@
 		</header>
 		<section class="top">
 			<h1>Welcome to Resurrection Bay Coffee</h1>
-			<h3>Find Us On Social Media</h3>
+			<h2>Find Us On Social Media</h2>
 			<ul>
 				<a href="https://www.facebook.com/"><li class="social-media horizontal-list"><i class="fa-brands fa-facebook-f"></i></li></a>
 				<a href="https://twitter.com/"><li class="social-media horizontal-list"><i class="fa-brands fa-twitter"></i></li></a>
@@ -39,10 +39,11 @@
 			</ul>
 		</section>
 	</div>
-		<section id="about">
-			<div class="overlay-right">
-			<h3>About us</h3>
-			<h2>Why a Coffee Roaster in Seward, Alaska?</h2>
+	<div class="overlay full-height">
+	<img class="inline-image left hidden" id="julian" alt="Julian demonstrates pour-over technique" src="images/nathan-dumlao-wCJ1WwrAHW0-unsplash.jpg">
+		<section id="about" class="right">
+			<h2>About us</h2>
+			<h3>Why a Coffee Roaster in Seward, Alaska?</h3>
 			<p>
 				Alaskans are lucky in our coffee choices, but our founders, Sadie and Julian, felt the Kenai Peninsula needed our own, local coffee roaster.
 				When our roasting facility expanded to included a coffee shop, we wanted to offer coffee brewed with exceptional consistency and quality in a cozy, community-focused space.
@@ -50,17 +51,27 @@
 			<p>
 				Our seasonal menu includes vegan, gluten-free, and dairy free options year-round.  Come see us in historic downtown Seward and see why thousands of locals and visitors alike choose Resurrection Bay Coffee again and again.
 			</p>
+			</section>
+			<img class="inline-image mobile-only" alt="Julian demonstrates pour-over technique" src="images/nathan-dumlao-wCJ1WwrAHW0-unsplash.jpg">
 		</div>
-		</section>
-		<section id="coffee">
-			<div class="overlay-left">
-			<h3>Our Blends</h3>
-			<h2>Order Our Coffees</h2>
+			<section id="coffee" class="clear clearfix">
+			<h2>Our Blends</h2>
+			<h3>Order Our Coffees</h3>
 			<p>
 				We ship our locally-roasted coffees anywhere in state - and around the world.  Free local delivery anywhere in Seward 
 				- including the Exit Glacier Campground - when you order 2 pounds or more.
 			</p>
 			<table>
+				<thead>
+					<tr>
+						<th scope="col">Blend</th>
+						<th scope="col">Price</th>
+						<th scope="col">Weight</th>
+						<th scope="col">Grind</th>
+						<th scope="col">Roast</th>
+						<th scope="col">Description</th>
+					</tr>
+				</thead>
 				<tr>
 					<td><h4>Exit Glacier</h4></td>
 					<td class="price">$19.95</td>
@@ -102,22 +113,31 @@
 					<td>rich with notes of chocolate and currant</td>
 				</tr>
 			</table>
-		</div>
 		</section>
-		<section id="hours" class="clear">
-			<h3>Our Schedule</h3>
-			<h2>Hours of Operation</h2>
+		<section id="hours" class="overlay">
+			<h2>Our Schedule</h2>
+			<h3>Hours of Operation</h3>
+			<ul>
+				<li>Sunday - Monday: Closed</li>
+				<li>Tuesday - Thursday: 6 am - 6 pm</li>
+				<li>Friday - Saturday: 6 am - 8 pm</li>
+			</ul>
 		</section>
 		<section id="location">
-			<h3>Come See Us</h3>
-			<h2>Location</h2>
-			<input type="search" id="site-search" name="q" placeholder="Search here">
-			<button>Location</button>
+			<h2>Come See Us</h2>
+			<h3>Location</h3>
+			<p>We are located on Railway Avenue, next to the Sea Life Center</p>
+			<div class="google-maps">
+			<iframe
+					src="https://www.google.com/maps/d/u/0/embed?mid=1tlv3q06ET7FhXSy69xovmJiPInw1KZA&ehbc=2E312F" 
+					min-width="60%"
+					style="border:0;"
+					allowfullscreen=""
+					loading="lazy"
+					></iframe>
+		</div>
 		</section>
 		<footer>
-			<a href="https://www.flaticon.com/free-icons/cart" title="cart icons">Shopping cart icon created by Freepik - Flaticon</a>
-			<a href="https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Magnifying glass icon created by Freepik - Flaticon</a>
 		</footer>
-		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

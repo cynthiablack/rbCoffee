@@ -28,44 +28,18 @@ a {
 
 body {
   background-image: url('../images/header.jpg');
-  /*background-position: 100% -80vh;*/
-  background-size: cover;
   font-family: Roboto, Arial, sans-serif;
+  padding-left: 2%;
 }
 
-button {
-  background-color: rgb(224, 136, 20);
-  color: #fff;
-  font-weight: bold;
-  border-radius: 10px;
-}
-
-button, input {
-  min-height: 5vh;
-  min-width: 8vw;
-}
-
-h1 {
-  max-width: 50%;
-}
-
-h1, h2 {
+h1, h3 {
   font-family: 'Abril Fat Face', 'Lucida Bold', 'Display';
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
-h3, .price {
+h2, .price {
   color: rgb(224, 136, 20);
- /* line-height: 0;*/
-}
-
-h4, .price {
-  font-size: 1.75rem;
   font-weight: bold;
-}
-
-input {
-  border-radius: 10px 0 0 10px;
 }
 
 li {
@@ -75,6 +49,24 @@ li {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+.horizontal-list {
+  display: inline;
+  padding-left: 2%;
+}
+
+.inline-image {
+  max-width: 40%;
+}
+
+.logo {
+  width: 10%;
+}
+
+.mobile-only {
+  margin-left: 25%;
+}
+
 nav {
   float: right;
   margin-right: 2vw;
@@ -82,58 +74,6 @@ nav {
   top: 2.5vh;
   right: -3.5vw;
   transform: rotate(180deg)
-}
-
-section {
-  padding: 1vh 1vw;
-}
-
-footer {
-
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-#about {
-  background-image: url('../images/coffee-cup.jpg');
-  background-position: 100% -55vh;
-  background-size: cover;
-}
-
-#about h3 {
-  position: relative;
-  left: -41vw;
-}
-/*
-.background-image {
-  background-image: url('../images/tool.jpg');
-  background-position: 100% auto;
-  background-size: cover;
-}
-
-#coffee {
-  background-image: url('../images/header.jpg');
-  background-position: 100% -80vh;
-  background-size: cover;
-}
-*/
-.coffee-profile {
-  display: inline-block;
-}
-
-.horizontal-list {
-  display: inline;
-  padding-left: 2%;
-}
-
-.logo {
-  width: 80px;
-}
-
-.nav-icon {
-  width: 20px;
 }
 
 .nav-menu {
@@ -149,27 +89,125 @@ footer {
   font-weight: bold;
 }
 
-.overlay-left {
-  background-color: rgba(218, 218, 218, 0.85);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-right: 50%;
-  padding: 1%;
+table {
+  border-collapse: collapse;
 }
 
-.overlay-right {
-  background-color: rgba(218, 218, 218, 0.85);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-left: 50%;
-  padding: 1%;
+th,
+td {
+  border: 1px solid #cecfd5;
+  padding: 10px 15px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#about {
+  float: left;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+ min-width: 70%;
+  min-height: 70%;
+}
+
+.hidden {
+  display: none;
 }
 
 .social-media {
   color: rgb(224, 136, 20);
   padding: 0 2vw 2vh 0;
+}
+
+thead {
+  background: rgb(224, 136, 20);
+  color: #fff;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (min-width: 800px) {
+    /******************************************
+    /* BASE STYLES - FULL SCREEN
+    /*******************************************/
+      h1 {
+        max-width: 50%;
+      }
+
+      h1, h3 {
+        font-size: 4rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        padding-top: 2%;
+      }
+
+      p, table, li {
+        font-size: 1.4rem;
+      }
+
+    /******************************************
+    /* LAYOUT - FULL SCREEN
+    /*******************************************/
+      .left {
+        float: left;
+        margin-left: 2%;
+        padding-right: 1%;
+        width: 55%;
+      }
+
+      .logo {
+        width: 80px;
+      }
+
+      .right {
+        float: right;
+        margin-right: 2%;
+        padding-left: 1%;
+        width: 55%;
+      }
+
+      table {
+        margin-bottom: 2%;
+      }
+
+      .top {
+        float: none;
+        clear: both;
+      }
+
+    /******************************************
+    /* ADDITIONAL STYLES - FULL SCREEN
+    /*******************************************/
+      .hidden {
+        display: inline-block;
+      }
+
+    .mobile-only {
+      display: none;
+    }
+
+    .overlay {
+      background-color: rgba(218, 218, 218, 0.85);
+      padding: 1%;
+    }
+
+    .full-height {
+      height: 75vh;
+    }
 }
